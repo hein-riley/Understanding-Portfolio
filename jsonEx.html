@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Understanding Portfolio</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="containerWrapper">
+                <header>
+                <h1><a href="index.html">Riley Hein's Understanding Portfolio | CIT 261</a></h1>
+                <div class="nav">
+                    <ul class="nav">                        
+                        <li class="nav"><a href="#">CSS3 (Transitions, Transformations, Animations)</a></li>
+                        <li class="nav"><a href="#">Local Storage</a></li>
+                        <li class="nav"><a href="ajax.html">AJAX</a></li>
+                        <li class="nav"><a href="#">DOM</a></li>
+                        <li class="nav"><a href="#">JavsScript Objects</a></li>
+                        <li class="nav"><a href="json.html">JSON</a></li>
+                    </ul>
+                </div><!-- nav -->
+            </header>
+                <div class="content">
+                    <h2>JSON Example</h2>
+                    <p>Below you will see data displayed that is being parse with JSON. If you right click and 'View Source', you will see the JSON script running the code.</p>
+                    <hr><br />
+                    
+                    
+                    <div id="json"></div>
+                    
+                    <script>
+
+                    var data = '{"name":"Cpt. Cyber Socks","street":"123 Happyp Street","phone":"555-123-457"}';
+
+                    var pass = JSON.parse(data);
+
+                    document.getElementById("json").innerHTML =
+                    pass.name + "<br>" +
+                    pass.street + "<br>" +
+                    pass.phone;
+
+                    </script>
+                    
+                    
+                </div><!-- content -->
+            </div><!-- containerWrapper -->
+        </div><!-- contianer -->
+    </body>
+</html>

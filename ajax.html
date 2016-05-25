@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Understanding Portfolio</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="containerWrapper">
+                <header>
+                <h1><a href="index.html">Riley Hein's Portfolio | CIT 261</a></h1>
+                <div class="nav">
+                    <ul class="nav">                        
+                        <li class="nav"><a href="#">CSS3 (Transitions, Transformations, Animations)</a></li>
+                        <li class="nav"><a href="#">Local Storage</a></li>
+                        <li class="nav"><a href="ajax.html">AJAX</a></li>
+                        <li class="nav"><a href="#">DOM</a></li>
+                        <li class="nav"><a href="#">JavsScript Objects</a></li>
+                        <li class="nav"><a href="json.html">JSON</a></li>
+                    </ul>
+                </div><!-- nav -->
+            </header>
+                <div class="content">
+                    <h2>AJAX</h2>
+                    <p>AJAX is an ancronym for Asynchronous JavaScript and XML.</p>
+                    <p>AJAX can do a lot of things that allow you to change content on your website without having to refresh the page. Here is a list of some of the highlights that you can accomplish using AJAX:</p>
+                    <ul>
+                        <li>Update a web page without reloading the page</li>
+                        <li>Request data from a server - after the page has loaded </li>
+                        <li>Receive data from a server - after the page has loaded</li>
+                        <li>Send data to a server - in the background</li>
+                    </ul>
+                    <p>Example sites that use AJAX are:</p>
+                    <ul>
+                        <li>Google maps</li>
+                        <li>Gmail</li>
+                        <li>YouTube</li>
+                        <li>Facebook</li>
+                    </ul>
+                    <br />
+                    <h2>Here is how AJAX works</h2>
+                    <img src="images/ajax.gif" alt="ajax">
+                    
+                    <br />
+                    
+                    <p>The XMLHttpRequest object is used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.</p>
+                    <p>To create the XMLHttpRequest Object, we first need to create a variable that equals new XMLHttpRequest();</p>
+                    <p>Then you need to specify what information you are trying to get from the server. This is what you would call, sending a reqeust to the server.</p>
+                    <p>Here is an example to send a request to a server:</p>
+                    <p>xhttp.open("GET", "ajax_info.txt", true);</p>
+                    <p>xhttp.send();</p>
+                    <br />
+                    <p>You can use the GET or POST function to pass the information.</p>
+                    <p>GET is simpler and faster than POST, and can be used in most cases. However, always use POST requests when:</p>
+                    <ul>
+                        <li>A cached file is not an option (update a file or database on the server).</li>
+                        <li>Sending a large amount of data to the server (POST has no size limitations).</li>
+                        <li>Sending user input (which can contain unknown characters), POST is more robust and secure than GET.</li>
+                    </ul>
+                    <p>After you declare if you are going to use a GET or POST function, then you enter in the URL of the file that you would like to request that contains the data.</p>
+                    <p>Finally, we need to declare the asynchronous to true or false.</p>
+                    <p>AJAX stands for Asynchronous JavaScript and XML, and for the XMLHttpRequest object to behave as AJAX, the async parameter of the open() method has to be set to true:</p>
+                    <p>Sending asynchronous requests is a huge improvement for web developers. Many of the tasks performed on the server are very time consuming. Before AJAX, this operation could cause the application to hang or stop.</p>
+                    <p>Then, we need to set property called responseText. The responseText property returns the response as a string, and you can use it accordingly:</p>
+                    <p>document.getElementById("demo").innerHTML = xhttp.responseText;</p>
+                    <br />
+                        <p><a href="http://www.rentercafe.com/wp-content/themes/renterCafe/ajax/ajaxExample.html">Click here to view the example page.</a></p>
+                    </ol>
+                </div><!-- content -->
+            </div><!-- containerWrapper -->
+        </div><!-- contianer -->
+    </body>
+</html>

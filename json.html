@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Understanding Portfolio</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="containerWrapper">
+                <header>
+                <h1><a href="index.html">Riley Hein's Understanding Portfolio | CIT 261</a></h1>
+                <div class="nav">
+                    <ul class="nav">                        
+                        <li class="nav"><a href="css.html">CSS3 (Transitions, Transformations, Animations)</a></li>
+                        <li class="nav"><a href="localStorage.html">Local Storage</a></li>
+                        <li class="nav"><a href="ajax.html">AJAX</a></li>
+                        <li class="nav"><a href="dom.html">DOM</a></li>
+                        <li class="nav"><a href="javascript.html">JavsScript Objects</a></li>
+                        <li class="nav"><a href="json.html">JSON</a></li>
+                    </ul>
+                </div><!-- nav -->
+            </header>
+                <div class="content">
+                    <h2>JSON</h2>
+                    <p>JSON is an acroynim for JavaScript Object Notation.</p>
+                    <p>JSON is typically used for storing and exchanging data</p>
+                    <p>It's very similar to XML, but it's not as cluttered as XML</p>
+                    <p>JSON uses JavaScript syntax, but it's text based</p>
+                    <br />
+                    <h2>Parsing JSON</h2>
+                    <p>In order to view JSON as text in the browse, you have to parse the information.. JSON can be parsefd by a standard JavaScript function.</p>
+                    <p>To parse the information, first you need to input the data that you would like to store or exchange. Below is an example of a variable that stores that JSON data:</p>
+                    <img src="images/JSONdata.PNG" alt="json data">
+                    <p>Following that, you need to set up a JavaScript variable that has JSON.parse(VariableName); as the value. This tells teh browser that this is JSON and that it is going to parse the information. Whatever information that is placed inbetween the parenthesises.</p>
+                    <br />
+                    <p>Then we need to set up our document.getElementById and pass the variables. Like such:</p>
+                    <img src="images/get.PNG" alt="get element">
+                    
+                    <p>Click <a href="jsonExample.html" target="_blank">here</a> to see a work example of data being parse with JSON.</p>
+                    <br />
+                    <h2>Stringify()</h2>
+                    <p>The JSON.stringify() method converts a JavaScript value to a JSON string, optionally replacing values if a replacer function is specified, or optionally including only the specified properties if a replacer array is specified.</p>
+                    <br />
+                    <p>Parameters</p>
+                    <ul>
+                        <li>Value: The value to convert to a JSON string.</li>
+                        <li>Replacer [optional]: A function that alters the behavior of the stringification process, or an array of String and Number objects that serve as a whitelist for selecting the properties of the value object to be included in the JSON string. If this value is null or not provided, all properties of the object are included in the resulting JSON string.
+</li>
+                        <li>Space [optional]: A String or Number object that's used to insert white space into the output JSON string for readability purposes. If this is a Number, it indicates the number of space characters to use as white space; this number is capped at 10 if it's larger than that. Values less than 1 indicate that no space should be used. If this is a String, the string (or the first 10 characters of the string, if it's longer than that) is used as white space. If this parameter is not provided (or is null), no white space is used.
+</li>
+                    </ul>
+                    <br />
+                    
+                    <p>To use the stringify function of JSON, all you have to do is create a JavaScript variable with a string of data. Afterwhich, you will type in the following code:</p>
+                    
+                    <p>JSON.stringify(callVariable);</p>
+                    
+                    <p>Where I have callVariable, you will put in teh variable with the values that you want to stringify. </p>
+                    
+                    <br />
+                    <p>Click <a href="jsonStringify.html" target="_blank">here</a> to see a work example of data being parse with JSON.</p>
+                </div><!-- content -->
+            </div><!-- containerWrapper -->
+        </div><!-- contianer -->
+    </body>
+</html>
